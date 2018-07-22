@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+    site:
+        image: mysite:latest
+        restart: always
+        expose:
+         - "80"
+        networks:
+         - web
+         - default
+        labels:
+         - "traefik.backend=personal-site"
+         - "traefik.docker.network=web"
+         - "traefik.basic.frontend.rule=Host:solderneer.me"
+         - "traefik.enable=true"
+         - "traefik.basic.port=80"
+         - "traefik.fallback.frontend.rule=Host:www.solderneer.me"
+         - "traefik.fallback.port=80"
+
+networks:
+    web:
+        external: true
