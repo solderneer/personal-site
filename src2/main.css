@@ -1,3 +1,25 @@
+
+
+# Color Scheme
 .primary {
-    color:
+    color: #EF626C;
 }
+
+.secondary {
+    color: #EA8C55;
+}
+
+.tertiary {
+    color: #C75146;
+}
+
+.white {
+    color: #FFFCF9;
+}
+
+.text {
+    color: #22181C;
+}
+
+
+
