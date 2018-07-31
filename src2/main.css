@@ -1,6 +1,35 @@
+/* General rules */
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
 
-# Color Scheme
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* CSS flexbox thingies */
+.column {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Color Scheme */
 .primary {
     color: #EF626C;
 }
@@ -17,7 +46,7 @@
     color: #FFFCF9;
 }
 
-.text {
+.text-color {
     color: #22181C;
 }
 
