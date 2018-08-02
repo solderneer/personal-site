@@ -48,5 +48,26 @@ body {
     color: #22181C;
 }
 
+/* Link Styling */
+a:link {
+    text-decoration: none;
+    color: #22181C;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #22181C;
+}
+
+a:hover {
+    text-decoration: none;
+     color: #EF626C;
+}
+
+a:active {
+    text-decoration: none;
+    color: #22181C;
+}
+
 
 
