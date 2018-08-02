@@ -17,6 +17,15 @@ body {
     font-weight: 300;
 }
 
+/* Div styling */
+.timespan {
+    color: #BDBDBD;
+}
+
+.title {
+    font-weight: 700;
+}
+
 /* Color Scheme */
 .primary {
     color: #EF626C;
