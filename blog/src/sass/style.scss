@@ -34,7 +34,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em 'Cardo', serif;
+	font: 400 2em / 1.5em 'Open Sans', serif;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -45,7 +45,7 @@ input,
 button,
 select,
 textarea {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	transition: all ease-out 0.2s;
 }
 
@@ -61,7 +61,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Trochut', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: $color-black;
 }
@@ -117,9 +117,9 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 1.5em;
 	text-align: right;
 	color: $color-black;
@@ -191,8 +191,8 @@ dl {
     padding-left: 30px;
 }
 dl dt {
-    font-family: 'Fira Sans', sans-serif;
-  	font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+  	font-weight: 400;
   	font-size: 0.75em;
   	line-height: 1.25em;
     font-weight: 700;
@@ -310,8 +310,8 @@ table td {
     border: 1px solid $color-gray-90;
 }
 table th {
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 	font-size: 0.75em;
 	line-height: 1.25em;
 	padding: 0.667em;
@@ -364,7 +364,7 @@ img[src$="#full"] {
   }
 
   figcaption {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: $color-blue-60;
     text-align: center;
     max-width: 32em;
@@ -521,7 +521,7 @@ img[src$="#full"] {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Trochut', sans-serif;
 	font-weight: 700;
 	font-size: 2em;
 	line-height: 1em;
@@ -605,7 +605,7 @@ img[src$="#full"] {
 	margin-bottom: 1em;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.667em;
 	text-shadow: none;
@@ -640,6 +640,10 @@ img[src$="#full"] {
 	margin: auto;
 }
 
+.nav-label {
+    color: $color-white;
+}
+
 /* ==========================================================================
    Menu
    ========================================================================== */
@@ -650,11 +654,11 @@ img[src$="#full"] {
 	height: 100%;
 	top: 0;
 	right: 0;
-	background: $color-gray-95;
+	background: $primary-color;
 	border-left: 1px solid $color-gray-90;
 	z-index: 400;
 	overflow: hidden;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
 	transform: translate3d(16em,0,0);
 	transition: all ease-out 0.25s;
@@ -680,7 +684,7 @@ img[src$="#full"] {
 #menu .close-button:hover,
 #menu .close-button:focus {
 	transform: rotate(180deg);
-	border-color: $primary-color;
+	border-color: $color-white;
 }
 #menu .close-button:after,
 #menu .close-button:before {
@@ -691,14 +695,14 @@ img[src$="#full"] {
 	top: 50%;
 	margin-left: -0.5em;
 	content: '';
-	background: $color-blue-60;
+	background: $color-gray-98;
 	transition: all ease 0.3s;
 }
 #menu .close-button:hover:after,
 #menu .close-button:hover:before,
 #menu .close-button:focus:after,
 #menu .close-button:focus:before {
-	background: $primary-color;
+	background: $color-white;
 }
 #menu .close-button:after {
 	transform: rotate(45deg);
@@ -757,14 +761,14 @@ img[src$="#full"] {
 #menu li a {
 	display: block;
 	padding: 1.25em 1.5em;
-	color: $color-blue-15;
+	color: $color-gray-98;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	font-weight: 400;
 }
 #menu li a:hover,
 #menu li a:focus {
-	color: $color-black;
+	color: $color-white;
 	background: rgba(0,0,0,0.05);
 }
 #menu li a i {
@@ -774,7 +778,7 @@ img[src$="#full"] {
 	color: inherit;
 }
 #menu li.active a {
-	color: $color-black;
+	color: $color-white;
 	font-weight: 500;
 }
 
@@ -810,7 +814,7 @@ img[src$="#full"] {
 #footer {
 	position: relative;
 	z-index: 20;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1em;
 	padding-bottom: 6em;
 }
@@ -995,7 +999,7 @@ img[src$="#full"] {
 	z-index: 10;
 	display: block;
 	margin-bottom: 1.334em;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.75em;
 	font-weight: 400;
 	line-height: 1.334em;
@@ -1082,7 +1086,7 @@ img[src$="#full"] {
 .post-tags {
 	max-width: 75%;
 	float: left;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .post-tags a {
 	display: inline-block;
@@ -1118,7 +1122,7 @@ img[src$="#full"] {
 	border-top: 1px solid $color-gray-90;
 	border-bottom: 1px solid $color-gray-90;
 	clear: both;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .post-author-avatar {
 	position: relative;
@@ -1197,7 +1201,7 @@ img[src$="#full"] {
 	border-bottom: 1px solid $color-gray-90;
 	clear: both;
   text-align: center;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .post-authors-info {
   margin: 0 0 0.334em;
@@ -1232,7 +1236,7 @@ img[src$="#full"] {
 	margin: 0;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.334em;
 	color: $color-blue-60;
@@ -1397,7 +1401,7 @@ img[src$="#full"] {
 	height: 2em;
 	margin: 0;
 	padding: 2em 0;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .pagination:after {
 	position: absolute;
