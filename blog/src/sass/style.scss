@@ -34,7 +34,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em 'Open Sans', serif;
+	font: 300 2em / 1.5em 'Open Sans', serif;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -61,9 +61,10 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Trochut', sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: $color-black;
+    font-weight: 900;
 }
 
 h1 {
@@ -521,8 +522,8 @@ img[src$="#full"] {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: 'Trochut', sans-serif;
-	font-weight: 700;
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 900;
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
