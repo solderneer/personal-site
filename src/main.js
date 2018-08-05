@@ -1,5 +1,6 @@
 // Simple handler to update post data
 var httpRequest = new XMLHttpRequest();
+var htmlParser = new DOMParser();
 
 if(!httpRequest) {
     console.log("Cannot create an XMLHTTP instance");
@@ -17,11 +18,14 @@ function updatePosts() {
             document.querySelector('#blog-post-header-1').innerText = res.posts[0].title;
             document.querySelector('#blog-post-header-2').innerText = res.posts[1].title;
             
-            var post1_text = res.posts[0].plaintext;
-            var post2_text = res.posts[1].plaintext;
+            var post1_dom = parser.parseFromString(res.posts[0].html, 'text/html');
+            var post2_dom = parser.parseFromString(res.posts[1].html, 'text/html');
 
-            document.querySelector('#blog-post-text-1').innerText = post1_text.substr(0, 100);
-            document.querySelector('#blog-post-text-2').innerText = post2_text.substr(0, 100);
+            document.querySelector('#blog-post-text-1').innerText = post1_dom.querySelector('p').innerText.substr(0, 100);
+            document.querySelector('#blog-post-text-2').innerText = post2_dom.querySelector('p').innerText.substr(0, 100);
+
+            document.querySelector('#blog-post-link-1').href = "https://blog.solderneer.me/" + res.slug + '/'
+            document.querySelector('#blog-post-link-2').href = "https://blog.solderneer.me/" + res.slug + '/'
 
         } else {
             console.log("An error has occurred with the response")
