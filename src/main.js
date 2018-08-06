@@ -18,14 +18,15 @@ function updatePosts() {
             document.querySelector('#blog-post-header-1').innerText = res.posts[0].title;
             document.querySelector('#blog-post-header-2').innerText = res.posts[1].title;
             
-            var post1_dom = parser.parseFromString(res.posts[0].html, 'text/html');
-            var post2_dom = parser.parseFromString(res.posts[1].html, 'text/html');
+            var post1_dom = htmlParser.parseFromString(res.posts[0].html, 'text/html');
+            var post2_dom = htmlParser.parseFromString(res.posts[1].html, 'text/html');
 
-            document.querySelector('#blog-post-text-1').innerText = post1_dom.querySelector('p').innerText.substr(0, 100);
-            document.querySelector('#blog-post-text-2').innerText = post2_dom.querySelector('p').innerText.substr(0, 100);
+            // TODO: write a better summarization thingy
+            document.querySelector('#blog-post-text-1').innerText = post1_dom.querySelector('p').innerText.substr(0, 200) + '...';
+            document.querySelector('#blog-post-text-2').innerText = post2_dom.querySelector('p').innerText.substr(0, 200) + '...';
 
-            document.querySelector('#blog-post-link-1').href = "https://blog.solderneer.me/" + res.slug + '/'
-            document.querySelector('#blog-post-link-2').href = "https://blog.solderneer.me/" + res.slug + '/'
+            document.querySelector('#blog-post-link-1').href = "https://blog.solderneer.me/" + res.posts[0].slug + '/'
+            document.querySelector('#blog-post-link-2').href = "https://blog.solderneer.me/" + res.posts[1].slug + '/'
 
         } else {
             console.log("An error has occurred with the response")
