@@ -13,7 +13,7 @@ httpRequest.send();
 function updatePosts() {
     if(httpRequest.readyState === XMLHttpRequest.DONE){
         if(httpRequest.status === 200) {
-            console.log(httpRequest.responseText);
+            // console.log(httpRequest.responseText);
             res = JSON.parse(httpRequest.responseText);
             document.querySelector('#blog-post-header-1').innerText = res.posts[0].title;
             document.querySelector('#blog-post-header-2').innerText = res.posts[1].title;
