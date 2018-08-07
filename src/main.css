@@ -70,5 +70,34 @@ a:active {
     color: #22181C;
 }
 
+/* Socials */
+.socials {
+    font-size: 25px;
+}
+
+.socials i {
+    margin-right: 4px;
+}
+
+a .fa-facebook-square:hover {
+    text-decoration: none;
+    color: #3b5999;
+}
+
+a .fa-twitter-square:hover {
+    text-decoration: none;
+    color: #55acee;
+}
+
+a .fa-instagram:hover {
+    text-decoration: none;
+    color: #e4405f;
+}
+
+a .fa-linkedin:hover {
+    text-decoration: none;
+    color: #0077B5;
+}
+
 
 
