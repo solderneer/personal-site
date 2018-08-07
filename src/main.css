@@ -62,12 +62,16 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: #C75146;
+    color: #22181C;
 }
 
 a:active {
     text-decoration: none;
     color: #22181C;
+}
+
+.hover:hover {
+    color: #C75146;
 }
 
 /* Socials */
