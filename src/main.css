@@ -98,6 +98,11 @@ a .fa-instagram:hover {
     color: #e4405f;
 }
 
+a .fa-github-square:hover {
+    text-decoration: none;
+    color: #6e5494;
+}
+
 a .fa-linkedin:hover {
     text-decoration: none;
     color: #0077B5;
