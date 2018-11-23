@@ -1,17 +1,17 @@
-version: '2'
+version: '3'
 
 services:
     site:
-        image: mysite:latest
+        build: .
         restart: always
         expose:
          - "80"
         networks:
-         - web
+         - proxy
          - default
         labels:
          - "traefik.backend=personal-site"
-         - "traefik.docker.network=web"
+         - "traefik.docker.network=proxy"
          - "traefik.basic.frontend.rule=Host:solderneer.me"
          - "traefik.enable=true"
          - "traefik.basic.port=80"
@@ -19,5 +19,5 @@ services:
          - "traefik.fallback.port=80"
 
 networks:
-    web:
+    proxy:
         external: true
