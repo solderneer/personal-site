@@ -1,7 +1,13 @@
 # personal-site
-Brand new personal site, hosted by me using docker
+Brand new personal site, hosted by me using docker.
+Currently hosted at [solderneer.me](solderneer.me) :)
 
-# Information
+## Setup
+```
+docker-compose up
+```
+
+## Information
 * Projects with descriptions and some thumbnail image
 * Talks with title of talk and link
 * Achievements & Awards
@@ -13,8 +19,9 @@ Brand new personal site, hosted by me using docker
   * Ethos, motivation
   * Quote from myself
 
-# Color Scheme
+## Color Scheme
 Look at palette.scss (subject to change)
 
-# Fonts
-
+## Fonts
+* Open Sans
+* Raleway 
