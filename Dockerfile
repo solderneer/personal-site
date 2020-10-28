@@ -1,3 +1,5 @@
-FROM kyma/docker-nginx
-COPY src/ /var/www
-CMD 'nginx'
+FROM nginx:stable-alpine
+COPY src/ /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+
